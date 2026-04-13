@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>4 Images 1 Mot</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<main>
+    <h1>4 Images 1 Mot</h1>
+
+    <!-- NIVEAU 1 -->
+    <div class="level" id="level1">
+        <div class="header">
+            <div class="nom"><p>UTILISATEUR</p></div>
+            <div class="levels"><span>1</span></div>
+            <div class="piece"><p class="coinDisplay">0 💰</p></div>
+        </div>
+        <div class="images">
+            <img src="foix/WhatsApp Image 2026-04-13 at 23.19.54 (1).jpeg" alt="">
+            <img src="foix/WhatsApp Image 2026-04-13 at 23.19.54 (2).jpeg" alt="">
+            <img src="foix/WhatsApp Image 2026-04-13 at 23.19.54 (3).jpeg" alt="">
+            <img src="foix/WhatsApp Image 2026-04-13 at 23.19.54.jpeg" alt="">
+        </div>
+        <div class="word"><span></span><span></span><span></span></div>
+        <div class="letters">
+            <button onclick="addLetter(this,'F')">F</button>
+            <button onclick="addLetter(this,'O')">O</button>
+            <button onclick="addLetter(this,'I')">I</button>
+            <button onclick="addLetter(this,'X')">X</button>
+        </div>
+        <button onclick="checkWord('FOI',1)" class="verifier">Valider</button>
+        <p class="msg" id="msg1"></p>
+    </div>
+
+    <!-- NIVEAU 2 -->
+    <div class="level" id="level2" style="display:none;">
+        <div class="header">
+            <div class="nom"><p>UTILISATEUR</p></div>
+            <div class="levels"><span>2</span></div>
+            <div class="piece"><p class="coinDisplay">0 💰</p></div>
+        </div>
+        <div class="images">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+        </div>
+        <div class="word"><span></span><span></span><span></span><span></span><span></span></div>
+        <div class="letters">
+            <button onclick="addLetter(this,'A')">A</button>
+            <button onclick="addLetter(this,'M')">M</button>
+            <button onclick="addLetter(this,'O')">O</button>
+            <button onclick="addLetter(this,'U')">U</button>
+            <button onclick="addLetter(this,'R')">R</button>
+            <button onclick="addLetter(this,'X')">X</button>
+        </div>
+        <button onclick="checkWord('AMOUR',2)" class="verifier">Valider</button>
+        <p class="msg" id="msg2"></p>
+    </div>
+
+    <!-- NIVEAU 3 -->
+    <div class="level" id="level3" style="display:none;">
+        <div class="header">
+            <div class="nom"><p>UTILISATEUR</p></div>
+            <div class="levels"><span>3</span></div>
+            <div class="piece"><p class="coinDisplay">0 💰</p></div>
+        </div>
+        <div class="images">
+          <img src="" alt="">
+          <img src="" alt="">
+          <img src="" alt="">
+          <img src="" alt="">
+        </div>
+        <div class="word"><span></span><span></span><span></span></div>
+        <div class="letters">
+            <button onclick="addLetter(this,'F')">F</button>
+            <button onclick="addLetter(this,'E')">E</button>
+            <button onclick="addLetter(this,'U')">U</button>
+            <button onclick="addLetter(this,'X')">X</button>
+        </div>
+        <button onclick="checkWord('FEU',3)" class="verifier">Valider</button>
+        <p class="msg" id="msg3"></p>
+    </div>
+
+    <!-- NIVEAU 4 -->
+    <div class="level" id="level4" style="display:none;">
+        <div class="header">
+            <div class="nom"><p>UTILISATEUR</p></div>
+            <div class="levels"><span>4</span></div>
+            <div class="piece"><p class="coinDisplay">0 💰</p></div>
+        </div>
+        <div class="images">
+           <img src="" alt="">
+           <img src="" alt="">
+           <img src="" alt="">
+           <img src="" alt="">
+        </div>
+        <div class="word"><span></span><span></span><span></span></div>
+        <div class="letters">
+            <button onclick="addLetter(this,'E')">E</button>
+            <button onclick="addLetter(this,'A')">A</button>
+            <button onclick="addLetter(this,'U')">U</button>
+            <button onclick="addLetter(this,'X')">X</button>
+        </div>
+        <button onclick="checkWord('EAU',4)" class="verifier">Valider</button>
+        <p class="msg" id="msg4"></p>
+    </div>
+
+    <!-- NIVEAU 5 -->
+    <div class="level" id="level5" style="display:none;">
+        <div class="header">
+            <div class="nom"><p>UTILISATEUR</p></div>
+            <div class="levels"><span>5</span></div>
+            <div class="piece"><p class="coinDisplay">0 💰</p></div>
+        </div>
+        <div class="images">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+        </div>
+        <div class="word"><span></span><span></span><span></span><span></span><span></span></div>
+        <div class="letters">
+            <button onclick="addLetter(this,'S')">S</button>
+            <button onclick="addLetter(this,'P')">P</button>
+            <button onclick="addLetter(this,'O')">O</button>
+            <button onclick="addLetter(this,'R')">R</button>
+            <button onclick="addLetter(this,'T')">T</button>
+            <button onclick="addLetter(this,'A')">A</button>
+            <button onclick="addLetter(this,'F')">F</button>
+        </div>
+        <button onclick="checkWord('SPORT',5)" class="verifier">Valider</button>
+        <p class="msg" id="msg5"></p>
+    </div>
+
+    <!-- NIVEAU 6 -->
+    <div class="level" id="level6" style="display:none;">
+        <div class="header">
+            <div class="nom"><p>UTILISATEUR</p></div>
+            <div class="levels"><span>6</span></div>
+            <div class="piece"><p class="coinDisplay">0 💰</p></div>
+        </div>
+        <div class="images">
+           <img src="" alt="">
+           <img src="" alt="">
+           <img src="" alt="">
+           <img src="" alt="">
+        </div>
+        <div class="word"><span></span><span></span><span></span><span></span><span></span></div>
+        <div class="letters">
+            <button onclick="addLetter(this,'M')">M</button>
+            <button onclick="addLetter(this,'A')">A</button>
+            <button onclick="addLetter(this,'T')">T</button>
+            <button onclick="addLetter(this,'H')">H</button>
+            <button onclick="addLetter(this,'T')">T</button>
+            <button onclick="addLetter(this,'S')">S</button>
+        </div>
+        <button onclick="checkWord('MATHS',6)" class="verifier">Valider</button>
+        <p class="msg" id="msg6"></p>
+    </div>
+
+    <!-- NIVEAU 7 -->
+    <div class="level" id="level7" style="display:none;">
+        <div class="header">
+            <div class="nom"><p>UTILISATEUR</p></div>
+            <div class="levels"><span>7</span></div>
+            <div class="piece"><p class="coinDisplay">0 💰</p></div>
+        </div>
+        <div class="images">
+           <img src="" alt="">
+           <img src="" alt="">
+           <img src="" alt="">
+           <img src="" alt="">
+        </div>
+        <div class="word"><span></span><span></span><span></span><span></span></div>
+        <div class="letters">
+            <button onclick="addLetter(this,'P')">P</button>
+            <button onclick="addLetter(this,'Y')">Y</button>
+            <button onclick="addLetter(this,'A')">A</button>
+            <button onclick="addLetter(this,'L')">L</button>
+            <button onclick="addLetter(this,'M')">M</button>
+        </div>
+        <button onclick="checkWord('PLAY',7)" class="verifier">Valider</button>
+        <p class="msg" id="msg7"></p>
+    </div>
+
+    <!-- NIVEAU 8 -->
+    <div class="level" id="level8" style="display:none;">
+        <div class="header">
+            <div class="nom"><p>UTILISATEUR</p></div>
+            <div class="levels"><span>8</span></div>
+            <div class="piece"><p class="coinDisplay">0 💰</p></div>
+        </div>
+        <div class="images">
+           <img src="" alt="">
+           <img src="" alt="">
+           <img src="" alt="">
+           <img src="" alt="">
+        </div>
+        <div class="word"><span></span><span></span><span></span><span></span><span></span></div>
+        <div class="letters">
+            <button onclick="addLetter(this,'E')">E</button>
+            <button onclick="addLetter(this,'L')">L</button>
+            <button onclick="addLetter(this,'O')">O</button>
+            <button onclick="addLetter(this,'C')">C</button>
+            <button onclick="addLetter(this,'E')">E</button>
+            <button onclick="addLetter(this,'C')">C</button>
+        </div>
+        <button onclick="checkWord('ECOLE',8)" class="verifier">Valider</button>
+        <p class="msg" id="msg8"></p>
+    </div>
+
+    <!-- NIVEAU 9 -->
+    <div class="level" id="level9" style="display:none;">
+        <div class="header">
+            <div class="nom"><p>UTILISATEUR</p></div>
+            <div class="levels"><span>9</span></div>
+            <div class="piece"><p class="coinDisplay">0 💰</p></div>
+        </div>
+        <div class="images">
+           <img src="" alt="">
+           <img src="" alt="">
+           <img src="" alt="">
+           <img src="" alt="">
+        </div>
+        <div class="word"><span></span><span></span><span></span><span></span></div>
+        <div class="letters">
+            <button onclick="addLetter(this,'H')">H</button>
+            <button onclick="addLetter(this,'T')">T</button>
+            <button onclick="addLetter(this,'C')">C</button>
+            <button onclick="addLetter(this,'A')">A</button>
+            <button onclick="addLetter(this,'M')">M</button>
+            <button onclick="addLetter(this,'L')">L</button>
+        </div>
+        <button onclick="checkWord('HTML',9)" class="verifier">Valider</button>
+        <p class="msg" id="msg9"></p>
+    </div>
+
+    <!-- NIVEAU 10 -->
+    <div class="level" id="level10" style="display:none;">
+        <div class="header">
+            <div class="nom"><p>UTILISATEUR</p></div>
+            <div class="levels"><span>10</span></div>
+            <div class="piece"><p class="coinDisplay">0 💰</p></div>
+        </div>
+        <div class="images">
+            <img src="" alt="">
+        </div>
+        <div class="word"><span></span><span></span><span></span></div>
+        <div class="letters">
+            <button onclick="addLetter(this,'C')">C</button>
+            <button onclick="addLetter(this,'S')">S</button>
+            <button onclick="addLetter(this,'S')">S</button>
+            <button onclick="addLetter(this,'I')">I</button>
+            <button onclick="addLetter(this,'X')">X</button>
+        </div>
+        <button onclick="checkWord('CSS',10)" class="verifier">Valider</button>
+        <p class="msg" id="msg10"></p>
+    </div>
+
+    <!-- ECRAN FIN -->
+    <div id="endScreen">
+        <h2>🏆 Félicitations !</h2>
+        <p>Tu as terminé tous les niveaux !</p>
+        <p id="finalCoins"></p>
+
+        <a href="index.html" style="text-decoration: none; color: white; font-weight: 700;">RECOMMENCER</a>
+    </div>
+
+</main>
+
+<script>
+    let pieces = 0;
+
+    function updateCoins() {
+        document.querySelectorAll(".coinDisplay").forEach(el => {
+            el.textContent = pieces + " 💰";
+        });
+    }
+
+    function addLetter(button, letter) {
+        let level = button.closest(".level");
+        let slots = level.querySelectorAll(".word span");
+
+        for (let slot of slots) {
+            if (slot.textContent === "") {
+                slot.textContent = letter;
+                button.disabled = true;
+                break;
+            }
+        }
+    }
+
+    function checkWord(correctWord, levelNum) {
+        let level = document.getElementById("level" + levelNum);
+        let slots = level.querySelectorAll(".word span");
+        let word = "";
+
+        slots.forEach(s => word += s.textContent);
+
+        let msg = document.getElementById("msg" + levelNum);
+
+        if (word === correctWord) {
+            msg.textContent = "✅ Bravo !";
+
+            // +10 pièces à chaque bonne réponse
+            pieces += 10;
+            updateCoins();
+
+            setTimeout(() => {
+                level.style.display = "none";
+
+                let nextLevel = levelNum + 1;
+                let next = document.getElementById("level" + nextLevel);
+
+                if (next) {
+                    next.style.display = "flex";
+                } else {
+                    let endScreen = document.getElementById("endScreen");
+                    endScreen.style.display = "flex";
+                    document.getElementById("finalCoins").textContent = "Pièces totales : " + pieces + " 💰";
+                }
+
+            }, 1000);
+
+        } else {
+            msg.textContent = "❌ Mauvais mot";
+
+            setTimeout(() => {
+                slots.forEach(s => s.textContent = "");
+                let buttons = level.querySelectorAll(".letters button");
+                buttons.forEach(btn => btn.disabled = false);
+                msg.textContent = "";
+            }, 1000);
+        }
+    }
+</script>
+
+</body>
+</html>
